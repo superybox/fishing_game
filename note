@@ -1,0 +1,42 @@
+fishing game note
+
+Fish_Main()
+	
+	The class use to initial game, and control all things.
+
+	__init__: It use for ceate and initial object form other class.
+	fish_run: It use for control game process.
+	fish_getButton: It use for create button list in all game.
+	fish_handleEvent: It use for detect if have event is happening.
+	
+Fish_Background()
+
+	The background just a base color use for title screen. if no display title image, this color will display
+
+	__init__:  it give background size width and height.
+	fish_draw: it fill color to title screen
+
+Fish_BgImage()
+
+	The class use for tile animate image.
+	
+	__init__: create animate image object
+	fish_draw: paste animate image to title screen
+
+Fish_Button()
+
+	This is base class for button use for game.
+
+	__init__: create button object(just a rect so far).
+	fish_containsPoint: check if cursor on the button.
+	fish_draw: Display button
+	fish_mouseOver: if cursor on the button, how the appearance should be displayed.
+	fish_mouseLeft: if cursor is not on the button, how the appearance should be displayed.
+	fish_mouseDown: if cursor clicked button, how the appearance should be displayed.
+	fish_signal: it use for tell main class something.
+
+Fish_List():
+
+	This class will create a list to record the name and count of the fish by player fished.
+
+	__init__: 
